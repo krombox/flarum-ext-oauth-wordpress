@@ -1,0 +1,41 @@
+{
+    "name": "krombox/flarum-ext-oauth-wordpress",
+    "description": "Log in to your Flarum forum with WordPress",
+    "keywords": [
+        "flarum", "wordpress", "sso", "oauth", "login"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/krombox/flarum-ext-oauth-wordpress/issues",
+        "source": "https://github.com/krombox/flarum-ext-oauth-wordpress",
+        "forum": "https://discuss.flarum.org/d/6822"
+    },
+    "require": {
+        "flarum/core": "^1.2.0",
+        "fof/oauth": "^1.3.0",
+        "krombox/oauth2-wordpress": "^0.1"
+    },
+    "authors": [
+        {
+            "name": "Roman Kapustian",
+            "homepage": "https://discuss.flarum.org/u/krombox"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Krombox\\OAuthWordPress\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Log In With WordPress",
+            "category": "feature",
+            "icon": {
+                "name": "fab fa-wordpress",
+                "backgroundColor": "#23282d",
+                "color": "#fff"
+            }
+        }
+    }
+}
